@@ -1,0 +1,14 @@
+
+.custom-btn {
+  background-color: #003060;
+  color: #fff;
+  border: none;
+}
+.custom-btn:hover {
+  background-color: #0050a0; 
+  color: #fff;
+}
+.login-title {
+  font-size: 2rem;
+  color: #003060;
+}
