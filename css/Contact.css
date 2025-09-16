@@ -1,0 +1,37 @@
+:root {
+  --main: #003060;
+  --hover: #0050a0;
+}
+
+.contact-card {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-title {
+  color: var(--main);
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+.btn-main {
+  background-color: var(--main);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  transition: transform .18s ease, background-color .18s ease;
+}
+
+.btn-main i {
+  margin-left: .6rem;
+}
+
+.btn-main:hover,
+.btn-main:focus {
+  background-color: var(--hover);
+  transform: translateY(-3px);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
