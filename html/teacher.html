@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>نموذج تسجيل أستاذ</title>
+  <link rel="stylesheet" href="../css/student_teacher.css">
+  <link rel="stylesheet" href="../css/public.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+           <a href="../index.html">الرئيسية</a>
+      <a href="login.html">دخول</a>
+      <a href="services.html">الخدمات</a>
+      <a href="library.html">المكتبة</a>
+      <a href="contact.html">اتصل بنا</a>
+    </nav>
+  </header>
+  
+  <main class="container">
+    <h1>نموذج تسجيل أستاذ</h1>
+    <form method="post" target="_blank">
+      
+      <div class="row">
+        <div class="field">
+          <label for="username">اسم المستخدم:</label>
+          <input type="text" id="username" name="username" placeholder="ادخل اسم المستخدم" required>
+        </div>
+        <div class="field">
+          <label for="password">كلمة المرور:</label>
+          <input type="password" id="password" name="password" placeholder="********" required>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="field" >
+          <label for="phone" >رقم التلفون:</label>
+          <input type="tel" id="phone" name="phone" placeholder="مثال: 777123456" dir="rtl" required>
+        </div>
+        <div class="field">
+          <label for="id">رقم البطاقة:</label>
+          <input type="number" id="id" name="id" placeholder="ادخل رقم البطاقة" required>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="field">
+          <label for="email">البريد الإلكتروني:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+        </div>
+        <div class="field">
+          <label for="employee_id">الرقم الوظيفي:</label>
+          <input type="number" id="employee_id" name="employee_id" placeholder="ادخل رقمك الوظيفي" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="age">العمر:</label>
+          <input type="number" id="age" name="age" placeholder="مثال: 30" required>
+        </div>
+        <div class="field">
+          <label for="gender">الجنس:</label>
+          <select id="gender" name="gender" required>
+            <option value="">اختر الجنس</option>
+            <option value="ذكر">ذكر</option>
+            <option value="أنثى">أنثى</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="birthplace">مكان الميلاد:</label>
+          <input type="text" id="birthplace" name="birthplace" placeholder="ادخل مكان الميلاد">
+        </div>
+        <div class="field">
+          <label for="address">العنوان:</label>
+          <input type="text" id="address" name="address" placeholder="ادخل عنوانك الحالي">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="subject">المادة التي تدرسها:</label>
+          <input type="text" id="subject" name="subject" placeholder="مثال: الرياضيات">
+        </div>
+        <div class="field">
+          <label for="current_level">الصف الذي تدرسه:</label>
+          <select id="current_level" name="current_level" required>
+            <option value="">اختر الصف الدراسي الحالي</option>
+            <option value="الصف الأول">الصف الأول</option>
+            <option value="الصف الثاني">الصف الثاني</option>
+            <option value="الصف الثالث">الصف الثالث</option>
+            <option value="الصف الرابع">الصف الرابع</option>
+            <option value="الصف الخامس">الصف الخامس</option>
+            <option value="الصف السادس">الصف السادس</option>
+            <option value="الصف السابع">الصف السابع</option>
+            <option value="الصف الثامن">الصف الثامن</option>
+            <option value="الصف التاسع">الصف التاسع</option>
+            <option value="الصف العاشر">الصف العاشر</option>
+            <option value="الصف الحادي عشر">الصف الحادي عشر</option>
+            <option value="الصف الثاني عشر">الصف الثاني عشر</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit">تسجيل</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>جميع الحقوق محفوظة © 2025 مدرسة السفير</p>
+  </footer>
+</body>
+
+</html>
