@@ -35,6 +35,9 @@ header {
     box-shadow: 0 4px 12px rgba(0,0,0,.3);
     border-radius: 15px 15px 0 0;
     gap: 1rem;
+    height: 70px; 
+    position: relative;
+    z-index: 10001; 
 }
 
 .navbar {
@@ -125,41 +128,88 @@ footer {
     margin: 1rem 0;
 }
 
-.menu-toggle {
-    font-size: 28px;
-    cursor: pointer;
-    user-select: none;
-    display: none; 
-}
 
+
+/* إخفاء الـ checkbox */
 #menu-checkbox {
+  display: none;
+}
+
+/* زر القائمة */
+.menu-toggle {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+  user-select: none;
+}
+
+
+/* ✖ */
+.menu-toggle::after {
+  content: "✖";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 28px;
+  line-height: 30px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+
+
+
+ #menu-checkbox:checked 
+ { 
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+@media (max-width: 767px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
     display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: right;
+    background: var(--main);
+    width: 100%;
+    height: calc(100vh - 70px); /* طول الشاشة ناقص ارتفاع الهيدر */
+    padding: 1.5rem;
+    gap: 1.5rem;
+    position: fixed;   /* عشان تغطي الشاشة */
+    top: 70px;         /* يبدأ بعد الهيدر */
+    right: 0;
+    border-radius: 0;  /* يغطي كامل الشاشة */
+    box-shadow: none;  /* ما نحتاج ظل هنا */
+    z-index: 10001;
+    overflow-y: auto;  /* لو القائمة طويلة تطلع سكرول */
+    transition: opacity 0.5s ease;
+  }
+
+  #menu-checkbox:checked ~ .navbar {
+    display: flex;
+  }
+
+  .navbar a {
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+  }
+
+  .navbar a:hover {
+    background: var(--hover);
+    color: #fff;
+  }
 }
-
-
-@media (max-width: 767px){
-    .navbar {
-        display: none;
-        flex-direction: column;
-        background: var(--main);
-        position: absolute;
-        top: 70px;
-        right: 15px;
-        width: 220px;
-        border-radius: 10px;
-        padding: 1rem;
-        box-shadow: 0 4px 12px rgba(0,0,0,.3);
-    }
-
-    #menu-checkbox:checked ~ .navbar {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-}
-
-
-
 
