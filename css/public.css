@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+:root {
+    --main: #003060;
+    --hover: #0050a0;
+    --bg: #f5f7fa;
+    --text: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    background: var(--main);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,.3);
+    border-radius: 15px 15px 0 0;
+    gap: 1rem;
+}
+
+.navbar {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: var(--hover);
+}
+
+footer {
+    background: var(--main);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 -4px 12px rgba(0,0,0,.3);
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 2rem auto;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    transition: 0.5s ease;
+}
+
+.card {
+    min-width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.caption {
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background: var(--main);
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:hover {
+    background: var(--hover);
+}
+
+.school-video-element {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.menu-toggle {
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+    display: none; 
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+
+@media (max-width: 767px){
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background: var(--main);
+        position: absolute;
+        top: 70px;
+        right: 15px;
+        width: 220px;
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,.3);
+    }
+
+    #menu-checkbox:checked ~ .navbar {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صفحة المدير - اختيار المهمة</title>
+  <link rel="stylesheet" href="../css/adminold.css">
+  <link rel="stylesheet" href="../css/public.css">
+</head>
+
+<body>
+  <header>
+    <label for="menu-checkbox" class="menu-toggle">☰</label>
+    <input type="checkbox" id="menu-checkbox">
+    <nav class="navbar" aria-label="القائمة الرئيسية">
+      <a href="../index.html">الرئيسية</a>
+      <a href="login.html">دخول</a>
+      <a href="services.html">الخدمات</a>
+      <a href="library.html">المكتبة</a>
+      <a href="contact.html">اتصل بنا</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <form id="taskForm">
+      <label for="task">اختر المهمة:</label>
+      <select id="task" required>
+        <option value="">اختر المهمة</option>
+        <option value="add_student">إضافة طالب</option>
+        <option value="old_student">طالب مسبق</option>
+        <option value="add_teacher">إضافة أستاذ</option>
+        <option value="old_teacher">أستاذ مسبق</option>
+      </select>
+      <button type="submit">تنفيذ</button>
+    </form>
+  </main>
+
+  <script src="../js/adminold.js"></script>
+
+  <footer>
+    <p>جميع الحقوق محفوظة © 2025 مدرسة السفير</p>
+  </footer>
+</body>
+
+</html>

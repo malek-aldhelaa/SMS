@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>نموذج تسجيل طالب</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/student_teacher.css" />
+  <link rel="stylesheet" href="../css/public.css">
+</head>
+
+<body>
+  <header>
+    <label for="menu-checkbox" class="menu-toggle">☰</label>
+    <input type="checkbox" id="menu-checkbox">
+    <nav class="navbar">
+      <a href="../index.html">الرئيسية</a>
+      <a href="login.html">دخول</a>
+      <a href="services.html">الخدمات</a>
+      <a href="library.html">المكتبة</a>
+      <a href="contact.html">اتصل بنا</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>نموذج تسجيل طالب</h1>
+    <form>
+      <div class="row">
+        <div class="field">
+          <label for="username">الاسم الكامل:</label>
+          <input type="text" id="username" name="username" placeholder="أدخل اسمك الثلاثي" required />
+        </div>
+        <div class="field">
+          <label for="student_id">الرقم الأكاديمي:</label>
+          <input type="number" id="student_id" name="id" placeholder="مثال: 12345" required />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="age">العمر:</label>
+          <input type="number" id="age" name="age" placeholder="مثال: 15" min="5" max="20" required />
+        </div>
+        <div class="field">
+          <label for="gender">الجنس:</label>
+          <select id="gender" name="gender" required>
+            <option value="">اختر الجنس</option>
+            <option value="ذكر">ذكر</option>
+            <option value="أنثى">أنثى</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="birthplace">مكان الميلاد:</label>
+          <input type="text" id="birthplace" name="birthplace" placeholder="مثال: صنعاء" />
+        </div>
+        <div class="field">
+          <label for="address">العنوان:</label>
+          <input type="text" id="address" name="address" placeholder="مثال: شارع التحرير" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="guardian">اسم ولي الأمر:</label>
+          <input type="text" id="guardian" name="guardian" placeholder="مثال: أحمد محمد" />
+        </div>
+        <div class="field">
+          <label for="guardian_phone">رقم ولي الأمر:</label>
+          <input type="tel" id="guardian_phone" name="guardian_phone" placeholder="77xxxxxxx" pattern="[0-9]{9}"
+            dir="rtl" required />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="previous_level">الصف الدراسي السابق:</label>
+          <select id="previous_level" name="previous_level" required>
+            <option value="">اختر الصف</option>
+            <option>الصف الأول</option>
+            <option>الصف الثاني</option>
+            <option>الصف الثالث</option>
+            <option>الصف الرابع</option>
+            <option>الصف الخامس</option>
+            <option>الصف السادس</option>
+            <option>الصف السابع</option>
+            <option>الصف الثامن</option>
+            <option>الصف التاسع</option>
+            <option>الصف العاشر</option>
+            <option>الصف الحادي عشر</option>
+            <option>الصف الثاني عشر</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="current_level">الصف الدراسي الحالي:</label>
+          <select id="current_level" name="current_level" required>
+            <option value="">اختر الصف</option>
+            <option>الصف الأول</option>
+            <option>الصف الثاني</option>
+            <option>الصف الثالث</option>
+            <option>الصف الرابع</option>
+            <option>الصف الخامس</option>
+            <option>الصف السادس</option>
+            <option>الصف السابع</option>
+            <option>الصف الثامن</option>
+            <option>الصف التاسع</option>
+            <option>الصف العاشر</option>
+            <option>الصف الحادي عشر</option>
+            <option>الصف الثاني عشر</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit">📥 إرسال النموذج</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>جميع الحقوق محفوظة © 2025 مدرسة السفير</p>
+  </footer>
+</body>
+
+</html>

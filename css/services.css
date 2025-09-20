@@ -1,0 +1,40 @@
+main {
+    margin-top: 2rem; 
+    padding: 0 1.5rem; 
+}
+
+.services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 2rem;
+}
+
+
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #004080;
+}
